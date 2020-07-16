@@ -1,0 +1,48 @@
+
+Main goal, make writing faster and easier
+
+whats hard about writing? Finding words to fill in the blanks
+
+But blanks are usually jargon
+
+So we can limit that with AI!
+
+The goal would be to make an outline and then have the ai fill in the blanks. Maybe the ai could make some blanks of its own for where examples or more info needs to go.
+
+
+step 1 play around with tysons markov chain
+nvm
+
+
+heres what I want
+
+I want to be able to write out a couple of different points and sub points
+
+pt 1
+
+sub 1 
+
+sub 2
+
+pt 2 
+
+pt 3 
+
+sub 1
+
+pt 4
+
+pt 5
+
+
+and then have the model translate that into a doc kind of like a jinja template with {{  }} where you need to go in and fill with examples or whatever
+
+
+it would dictate the # of paragraphs, length of the paragraphs and the logical flow of the text
+
+in order to do this the model must be able to read an article, and group the pargraphs and sentences into points and sub points
+
+it needs to be able to classify a thesis/statement and examples
+
+
+
