@@ -1,11 +1,19 @@
 import numpy as np
 import math
 
+# paragraphs should already be recursively tokenized
 def paragraphsToClusters(paragraphs,stop_words=None):
     # n_paragraphs = len(paragraphs)
     flatParagraphs = [flattenParagraph(paragraph) for paragraph in paragraphs]
     similarity_matrix = build_similarity_matrix(flatParagraphs,stop_words)
-    clusters = similarityMatrixToClusters(similarity_matrix)
+    clusterIdxs = similarityMatrixToClusters(similarity_matrix)
+    print(clusterIdxs)
+    clusters = []
+    for cluster in clusterIdxs:
+        currentCluster = []
+        for paragraphIdx in cluster:
+            currentCluster.append(paragraphs[paragraphIdx])
+        clusters.append(currentCluster)
     return clusters
 
 def similarityMatrixToClusters(similarity_matrix):
