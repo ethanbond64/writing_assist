@@ -1,3 +1,5 @@
 *.html
 *.htm
+*.pyc
+*.DS_Store
 venv/
